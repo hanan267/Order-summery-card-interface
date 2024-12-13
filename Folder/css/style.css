@@ -1,0 +1,254 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  background-color: #e7eeee;
+ 
+}
+
+
+.parent {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 95%;
+  border-radius: 30px;
+  background-color: white;
+  margin-top: 100;
+}
+
+
+.music-girl {
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.child-1 {
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  padding: 10px 0;
+  color: #272f5c;
+}
+.description {
+  text-align: center;
+  padding: 20px;
+  font-size: large;
+  line-height: 1.8;
+  color: rgb(105, 104, 104);
+}
+
+
+.cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  width: 90%;
+  background-color: #f2f5f7;
+  border-radius: 8px;
+  border: none;
+}
+.cost a:hover {
+  color: rgba(77, 78, 77, 0.5);
+}
+
+.cost img {
+  margin-right: 15px;
+}
+
+.cost span {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.cost p {
+  margin: 0;
+}
+
+.plane {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b1afaf;
+}
+
+.change-link {
+  font-size: 14px;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+
+.payment-button {
+  display: block;
+  margin: 40px auto;
+  width: 90%;
+  padding: 20px 45px;
+  color: white;
+  background-color: hsl(245, 82%, 56%);
+  font-size: larger;
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+.payment-button:hover {
+  opacity: 0.8;
+}
+
+.cancel-button {
+  display: block;
+  margin: 40px auto;
+  width: 90%;
+  padding: 20px 45px;
+  color: rgb(151, 148, 148);
+  background-color: hsl(240, 100%, 99%);
+  font-size: larger;
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+} 
+.cancel-button:hover {
+  color: black;
+  font-weight: 900;
+}
+
+
+
+
+@media (max-width: 480px) {
+  body {
+    background: url(/assets/wave-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100vh;         
+    margin: 0;
+    padding: 0;
+    height: 100vh 
+  }
+  .g-parent {
+    padding: 0;
+    margin: 0;
+  }
+  .parent {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column
+  }
+  
+  .music-girl {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: small;
+    padding: 10px;
+  }
+
+  .payment-button, .cancel-button {
+    font-size: medium;
+    padding: 15px 30px;
+    width: 90%;
+  }
+  .parent .cost  {
+    width: 90%;
+  }
+  .parent .cost span p {
+    font-size: 15px;
+  }
+
+
+}
+@media (min-width: 426px) and (max-width: 1023px) {
+  body {
+    font-size: 14px;
+    background: url(/assets/wave-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+
+  }
+  .g-parent {
+    padding: 10%;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .parent {
+    width: 90%;
+    margin: 0;
+    padding: 0;    
+  }
+
+  .cost {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .description {
+    font-size: medium;
+  }
+  
+
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url(/assets/wave-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+    
+}
+.g-parent {
+  max-width: 700px;
+}
+.parent {
+  max-width: 100%;
+}
+}
